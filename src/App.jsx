@@ -1,11 +1,12 @@
 import React from 'react'
+import Navbar from './Components/Navbar'
 
 function App() {
     return (
-        <div>
-            App
+        <div className='font-[primary]'>
+            <Navbar/>
         </div>
     )
 }
 
-export default App
+export default App;
