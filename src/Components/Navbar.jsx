@@ -12,13 +12,14 @@ function Navbar() {
 
   };
 
+
   return (
-    <div className="w-full h-[191px] bg-[#E4E4E7] absolute">
+    <div className="w-full md:h-[191px] bg-[#E4E4E7] absolute">
       {/* Header Section */}
       <header className="flex flex-col md:flex-row items-center justify-between md:mx-20 md:h-[41px] relative mt-4">
         {/* Logo */}
         <div className="flex items-center justify-between w-full md:w-auto">
-          <div className="flex items-center">
+          <div className="flex items-center ml-2 md:ml-0">
             <img src="image/logo.png" alt="Logo" />
           </div>
 
@@ -38,31 +39,57 @@ function Navbar() {
 
         {/* Navigation */}
         <nav
-          className={`flex flex-col md:flex-row md:items-center md:space-x-[35px] ${isMobileMenuOpen ? 'block' : 'hidden md:flex'} w-full md:w-auto mt-2 md:mt-0 text-[14px]  `}
-        >
-          <a href="#" className="hover:font-bold text-[#71717A] hover:text-[#09090B] ">
-            Dashboard
-          </a>
-          <a href="#" className="hover:font-bold text-[#71717A] hover:text-[#09090B]">
-            Incidents
-          </a>
-          <a href="#" className="hover:font-bold text-[#71717A] hover:text-[#09090B]">
-            Locations
-          </a>
-          <a href="#" className="hover:font-bold text-[#71717A] hover:text-[#09090B]">
-            Activities
-          </a>
-          <a href="#" className="hover:font-bold text-[#71717A] hover:text-[#09090B]">
-            Documents
-          </a>
-          <a href="#" className="hover:font-bold text-[#71717A] hover:text-[#09090B]">
-            Cypher AI
-          </a>
-        </nav>
+  className={`flex flex-col md:flex-row md:items-center md:space-x-[35px] ${
+    isMobileMenuOpen ? 'block' : 'hidden md:flex'
+  } w-full md:w-auto mt-2 md:mt-0 text-[14px] ml-4 md:ml-0`}
+>
+  <a
+    href="#"
+    className="relative hover:font-bold text-[#71717A] hover:text-[#09090B] group"
+  >
+    Dashboard
+    <span className="absolute bottom-[-30px] left-0 w-[80px] h-[3px] bg-[#09090B] transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
+  </a>
+  <a
+    href="#"
+    className="relative hover:font-bold text-[#71717A] hover:text-[#09090B] group"
+  >
+    Incidents
+    <span className="absolute bottom-[-30px] left-0 w-[80px] h-[3px] bg-[#09090B] transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
+  </a>
+  <a
+    href="#"
+    className="relative hover:font-bold text-[#71717A] hover:text-[#09090B] group"
+  >
+    Locations
+    <span className="absolute bottom-[-30px] left-0 w-[80px] h-[3px] bg-[#09090B] transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
+  </a>
+  <a
+    href="#"
+    className="relative hover:font-bold text-[#71717A] hover:text-[#09090B] group"
+  >
+    Activities
+    <span className="absolute bottom-[-30px] left-0 w-[80px] h-[3px] bg-[#09090B] transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
+  </a>
+  <a
+    href="#"
+    className="relative hover:font-bold text-[#71717A] hover:text-[#09090B] group"
+  >
+    Documents
+    <span className="absolute bottom-[-30px] left-0 w-[80px] h-[3px] bg-[#09090B] transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
+  </a>
+  <a
+    href="#"
+    className="relative hover:font-bold text-[#71717A] hover:text-[#09090B] group"
+  >
+    Cypher AI
+    <span className="absolute bottom-[-30px] left-0 w-[80px] h-[3px] bg-[#09090B] transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
+  </a>
+</nav>
 
         {/* User Profile */}
         <div className="flex items-center space-x-4 mt-2 md:mt-0">
-          <button className="w-[40px] h-[40px]rounded-full">
+          <button className="w-[40px] h-[40px] rounded-full">
             <img src="image/notification.png" alt="" />
             {/* Notification Icon */}
           </button>
@@ -87,7 +114,7 @@ function Navbar() {
             <h1 className="text-[26px] text-[#09090B] font-[700]">Dashboard</h1>
           </div>
           <div className="flex flex-col md:flex-row items-center space-x-0 md:space-x-4 space-y-2 md:space-y-0">
-            <div className="flex items-center relative w-full md:w-auto bg-green-200 ">
+            <div className="flex items-center relative w-full md:w-auto ">
               <div className="absolute  flex items-center w-[18px] h-[18px] py-[20px] left-2">
                 <IoIosSearch />
               </div>
