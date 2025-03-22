@@ -42,7 +42,7 @@ function Card() {
   ];
 
   return (
-    <div className='w-full h-[709px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 lg:gap-x-11 ml-2 md:ml-0 '>
+    <div className='w-full h-[709px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 lg:gap-x-8 ml-2 md:ml-0 '>
       {data.map((item, index) => (
         <div key={index} className='shadow-md w-[306px] h-[337px]'>
           <div className='relative'>
