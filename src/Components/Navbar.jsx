@@ -1,7 +1,8 @@
 import React from 'react'
 import { useState } from 'react'
-
 import { IoIosSearch } from "react-icons/io";
+import Card from './Card';
+
 
 
 function Navbar() {
@@ -138,5 +139,4 @@ function Navbar() {
     </div>
   );
 }
-
-export default Navbar
+export default Navbar;
