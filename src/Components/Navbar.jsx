@@ -134,7 +134,9 @@ function Navbar() {
             </button>
           </div>
         </div>
-        
+        <div className='mt-[60px]'>
+          <Card />
+        </div>
       </main>
     </div>
   );
