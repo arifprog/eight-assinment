@@ -15,7 +15,7 @@ function Navbar() {
 
 
   return (
-    <div className="w-full md:h-[191px] bg-[#E4E4E7] absolute">
+    <div className="w-full md:h-[191px] bg-[#E4E4E7] absolute font-[primary]">
       {/* Header Section */}
       <header className="flex flex-col md:flex-row items-center justify-between md:mx-20 md:h-[41px] relative mt-4">
         {/* Logo */}
