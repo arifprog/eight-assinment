@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 import { IoIosSearch } from "react-icons/io";
-import Card from './Card';
+
 
 
 

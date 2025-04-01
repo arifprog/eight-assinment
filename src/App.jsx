@@ -1,12 +1,12 @@
 import React from 'react'
-import Dashboard from './Components/Dashboard'
+import Incidents from './Components/Incidents';
 
 
 function App() {
     return (
         <div>
             
-          <Dashboard />  
+          <Incidents />  
             
         </div>
     )
