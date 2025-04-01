@@ -1,12 +1,12 @@
 import React from 'react'
-import Incidents from './Components/Incidents';
+import IncidentStarted from './Components/IncidentStarted';
 
 
 function App() {
     return (
         <div>
             
-          <Incidents />  
+          <IncidentStarted />  
             
         </div>
     )
